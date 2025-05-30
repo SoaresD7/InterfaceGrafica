@@ -1,47 +1,60 @@
 <!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <title>Projeto Interface Gráfica</title>
-    <script src="https://cdn.tailwindcss.com"> </script>
+    <meta charset="UTF-8">
+    <title> Projeto Interface Gráfica </title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen">
-    <section>
-        <nav class="bg-gray-800 p-4">
-            <div class="container mx-auto flex justify-between Items-center">
-                <a class="text-white font-bold text-xl" href="#"> Meu Site </a>
-                <div>
-                    <a class="text-gray-300 hover:text-white mx-2" href="#"> Inicio</a>
-                </div>
+<body class="bg-white-700 min-h-screen">
+
+
+    <nav class="bg-blue-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-white font-bold text-xl" href="#"> Cadastro de Alunos </a>
+            <div>
+                <a class="text-white hover:text-white mx-2" href="https://github.com/SoaresD7">GitHub</a>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <section class="container mx-auto mt-10">
+        <h2 class="text-2xl font-bold mb-4">Formulário de Cadastro</h2>
+        <div class="bg-white p-6 rounded shadow-md">
+            <form class="space-y-4">
+                <div>
+                    <label class="block font-semibold">Nome</label>
+                    <input type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <label class="block font-semibold">E-mail</label>
+                    <input type="email" class="w-full p-2 border border-gray-300 rounded" placeholder="Digite seu e-mail">
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Adicionar</button>
+            </form>
+        </div>
     </section>
-</body>
-<body>
-    <section>
-        <nav>
-            <a> Inicio </a>
-            <a href="www.google.com"> Cadastro</a>
-        </nav>
-    </section>
-    <section>
-        <form>
-            <input type="text"> 
-            <input type="email">
-        </form>
-    </section>
-    <section>
-        <table>
+
+    <section class="container mx-auto mt-10">
+        <h2 class="text-2xl font-bold mb-4">Tabela de Cadastros</h2>
+        <table class="min-w-full bg-white rounded shadow-md">
             <thead>
-                <tr>
-                    <th> Nome </th>
-                    <th> E-mail </th>
+                <tr class="bg-gray-200 text-left">
+                    <th class="py-2 px-4">Nome</th>
+                    <th class="py-2 px-4">E-mail</th>
+                    <th class="py-2 px-4">Editar</th>
+                    <th class="py-2 px-4"> Deletar</th>
                 </tr>
             </thead>
-            <body>
-                <tr>
-                    <td> Davi </td>
-                    <td> Davi.soares2008@icloud.com</td>
+            <tbody>
+                <tr class="border-t">
+                    <td class="py-2 px-4">Davi Soares</td>
+                    <td class="py-2 px-4">Davi.soares2008@icloud.com</td>
+                    <td class="py-2 px-4"><button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Editar</button></td>
+                    <td class="py-2 px-4"><button type="submit" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-blue-600">Deletar</button></td>
                 </tr>
-            </body>
+            </tbody>
         </table>
     </section>
+
 </body>
+</html>
